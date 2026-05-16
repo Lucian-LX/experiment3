@@ -1,0 +1,31 @@
+
+# 数据集（太大，不上传）
+datasets/
+
+# 模型权重文件（默认全部忽略）
+checkpoints/**/*.pth
+# 但强制保留最终的 100 epoch 模型（下面用 ! 取消忽略，但需要 git add -f）
+!checkpoints/monet2photo_cyclegan/100_net_G_A.pth
+
+# 所有推理结果图片（太大）
+results/
+results_*/
+results_inference*/
+results_pretrain*/
+results_self*/
+
+# 临时目录
+/content/inference_tmp_*/
+/content/test_input_*/
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# Jupyter 检查点
+.ipynb_checkpoints/
+
+# 其他临时文件
+*.tmp
+.DS_Store
+*~
